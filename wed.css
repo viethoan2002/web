@@ -1,0 +1,372 @@
+*{box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+header{
+    height: 71px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+}
+header li{
+    display: inline-block;
+}
+header a{
+    text-decoration: none;
+    cursor: pointer;
+}
+.nav-choice{
+    display: flex;
+    align-items: center;
+}
+.nav-choice ul{
+    list-style-type: none;
+    margin: 0;
+    font-size: 0;
+    padding: 0;
+}
+.nav-choice ul li a{
+    color: black;
+    font-size: 15px;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 28px 15px;
+}
+.nav-choice ul li a:hover {
+    color: white;
+    background-color:hsl(158, 95%, 34%);
+}
+.nav-logo{
+    padding: 0 10px 0 20px;
+}
+.nav-logo img{
+   height: 71px;
+}
+.nav-choice ul li .new{
+    display: inline-block;
+    color: black;
+    padding: 2px 5px;
+    font-size: 9px;
+    font-weight: 600;
+    border: 1px solid black;
+    outline: none;
+    border-radius: 11px;
+    margin-left: 2px;
+    background-color: white;
+}
+.nav-user{
+    display: flex;
+    flex: 0 0 500px;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-user ul li a{
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+}
+.nav-user-icon img{
+    height: 71px;
+    padding: 0 10px;
+}
+.nav-user-global{
+    padding: 0 7px;
+}
+.nav-user-global:hover{
+    color: hsl(158, 95%, 34%);
+}
+.nav-user-option{
+    padding: 10px 15px;
+    border-radius: 30px;
+}
+.nav-user-option:hover{
+    color: white;
+    background-color:hsl(158, 95%, 34%) ;
+}
+/* end header*/
+/*begin html*/
+.content-html{
+    display: grid;
+    grid-template-columns: 40% 50%;
+    grid-template-rows: 400px;
+    padding: 60px 170px;
+    justify-content: space-between;
+    background-image: linear-gradient(rgb(40, 42, 53),rgb(40, 42, 53));
+    font-family: Arial, Helvetica, sans-serif;
+}
+.content-html a{
+    cursor: pointer;
+}
+.html-selec{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:transparent;
+    color: white;
+}
+.html-selec h1{
+    font-size: 80px;
+}
+.html-selec p{
+    font-size: 16px;
+    padding: 30px 0 20px 0;
+    font-weight: 700;
+}
+.html-selec-nav{
+min-width: 200px;
+}
+.html-selec-nav a{
+    margin: 20px 0;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 30px;
+    font-weight: 700;
+    background-color: white;
+}
+.html-selec-nav div{
+    position: relative;
+}
+.html-selec-nav div::after{
+    content: 'New';
+    position: absolute;
+    font-size: 13px;
+    top: -5px;
+    left: -13px;
+    padding:7px 12px;
+    border-radius: 60px;
+    color: black;
+    background-color: pink;
+    z-index: 100;
+    transform: rotate(-45deg);
+}
+/*hover cho nut begin*/ 
+a[href="#1"]{
+    color: white;
+    background-color: hsl(158, 95%, 34%);
+}
+a[href="#1"]:hover{
+    background-color:#059862;
+}
+a[href="#2"]{
+    color:black;
+    background-color: hsl(51, 100%, 85%);
+}
+a[href="#2"]:hover{
+    background-color:rgb(255, 240, 128);
+}
+a[href="#3"]{
+    color:black;
+    background-color: hsl(0, 0%, 96%);
+}
+a[href="#3"]:hover{
+    background-color:hsl(210, 9%, 91%);
+}
+/* hover cho nut html end*/
+
+.html-demo{
+    background-color: #E7E9EB;
+    padding: 40px 17px;
+    border-radius: 10px;
+}
+.html-demo p{
+    background-color: white;
+    margin: 20px 0 25px 0;
+    line-height: 25px;
+    padding: 10px;
+    border-left: 5px solid rgb(4, 170, 109);
+    font-size: 14px;
+    font-weight: 520;
+}
+.html-demo a{
+    text-decoration: none;
+    font-size: 17px;
+    color: white;
+    padding: 10px 45px;
+    border-radius: 20px;
+    background-color: #059862;
+}
+/*html end*/
+
+/*css begin*/
+.content-css{
+    display: grid;
+    grid-template-columns: 40% 50%;
+    grid-template-rows: 350px;
+    padding: 60px 170px;
+    justify-content: space-between;
+    background-image: linear-gradient(rgb(217, 238, 225),rgb(217, 238, 225));
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+.content-css a{
+    cursor: pointer;
+}
+.css-selec{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:transparent;
+    color: black;
+}
+.css-selec h1{
+    font-size: 80px;
+}
+.css-selec p{
+    font-size: 16px;
+    padding: 30px 0 20px 0;
+    font-weight: 700;
+}
+.css-selec-nav{
+min-width: 200px;
+}
+.css-selec-nav a{
+    margin: 20px 0;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    font-size: 16px;
+    padding: 13px;
+    border-radius: 30px;
+    font-weight: 700;
+    background-color: white;
+}
+
+/*hover cho nut begin*/ 
+a[href="#c1"]{
+    color: white;
+    background-color: hsl(158, 95%, 34%);
+}
+a[href="#c1"]:hover{
+    background-color:#059862;
+}
+a[href="#c2"]{
+    color:white;
+    background-color: black;
+}
+/* hover cho nut css end*/
+.css-demo{
+    background-color: #E7E9EB;
+    padding: 40px 17px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px 0px rgba(183, 183, 183, 0.8);;
+}
+.css-demo p{
+    background-color: white;
+    margin: 20px 0 25px 0;
+    line-height: 20px;
+    padding: 10px;
+    border-left: 5px solid rgb(4, 170, 109);
+    font-size: 14px;
+    font-weight: 520;
+}
+.css-demo a{
+    text-decoration: none;
+    font-size: 17px;
+    color: white;
+    padding: 10px 45px;
+    border-radius: 20px;
+    background-color: #059862;
+}
+/*css end*/
+
+/*section begin*/
+section{
+    display: grid;
+    padding: 50px;
+    grid-template-columns: repeat(4,18%);
+    grid-template-rows: repeat(4,112px);
+    justify-content: center;
+    grid-gap: 55px 85px;
+    background-color: rgb(40, 42, 53);
+}
+
+div[class|="test"]{
+    position: relative;
+    border-radius: 7px;
+}
+div[class|=test] a{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) ;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 550;
+    font-size: 30px;
+    color: black;
+}
+.test-1{
+    background-color: rgb(255, 192, 199);
+}
+.test-1:hover{
+    background-color: hsl(354, 100%, 91%);
+}
+.test-2{
+    background-color: rgb(255, 244, 163);
+}
+.test-2:hover{
+    background-color: hsl(51, 100%, 88%);
+}
+.test-3{
+    background-color:hsl(210, 9%, 91%) ;
+}
+.test-3:hover{
+    background-color:hsl(0, 0%, 92%) ;
+}
+.test-4{
+    background-color:hsl(145, 20%, 85%) ;
+}
+.test-4:hover{
+    background-color: hsl(145, 20%, 82%);
+}
+.test-5{
+    background-color: hsl(180, 42%, 70%) ;
+}
+.test-5:hover{
+    background-color: hsl(180, 42%, 75%);
+}
+.test-6{
+    background-color:hsl(353, 56%, 80%);
+}
+.test-6:hover{
+    background-color:hsl(353, 56%, 85%) ;
+}
+.test-7{
+    background-color: hsl(53, 65%, 75%);
+}
+.test-7:hover{
+    background-color: hsl(53, 65%, 80%);
+}
+.test-8{
+    background-color: hsl(0, 8%, 80%);
+}
+.test-8:hover{
+    background-color: hsl(0, 8%, 87%);
+}
+.test-9{
+    grid-column: 1 / span 2;
+    background-color: aliceblue;
+}
+.test-10{
+    grid-column: 3 / span 2;
+    background-color: aliceblue;
+}
+.test-11{
+    grid-column: 1 / span 2;
+    background-color: aliceblue;
+}
+.test-12{
+    grid-column: 3 / span 2;
+    background-color: aliceblue;
+}
+@media  (max-width:1080px){
+    .video{
+        display: none;
+    }
+    
+}
